@@ -7,14 +7,35 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 .visuallyHidden:not(:focus):not(:active) { position: absolute; width: 1px; height: 1px; margin: -1px;border: 0;padding: 0;white-space: nowrap;clip-path: inset(100%);clip: rect(00 0 0);overflow: hidden;}
 
 html {
+    font-size: 62.5%;
     text-align: center;
 }
-.wrapper {
-    margin: 0 auto;
-    max-width: 1000px;
+
+main {
+    display: flex;
+    justify-content: space-around;
 }
 
-.paletteWrapper {
+h1 {
+    font-size: 2rem;
+}
+
+h2 {
+    font-size: 1.5rem;
+}
+
+button {
+    font-size: 1.2rem;
+}
+
+.colourPalette {
+    width: 50%;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: auto auto auto auto auto;
+    grid-template-columns: repeat(5, auto [col-start]);
+    grid-template-rows: 25VH;
+}
+
+.flavourWrapper, .paletteWrapper {
+    width: 50%;
 }

@@ -8,6 +8,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 
 html {
     font-size: 62.5%;
+    font-family: 'Nunito', sans-serif;
     text-align: center;
 }
 
@@ -17,15 +18,22 @@ main {
 }
 
 h1 {
-    font-size: 2rem;
+    font-size: 5rem;
+    font-family: 'Satisfy', cursive;
+    text-transform: lowercase;
 }
 
 h2 {
     font-size: 1.5rem;
 }
 
+input[type=button] {
+    font-family: 'Nunito', sans-serif;
+}
+
 button {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    background-color: darkgray;
 }
 
 .colourPalette {
@@ -34,8 +42,11 @@ button {
     display: grid;
     grid-template-columns: repeat(5, auto [col-start]);
     grid-template-rows: 25VH;
+    height: 100%;
+    align-content: center;
 }
 
 .flavourWrapper, .paletteWrapper {
     width: 50%;
+    height: 75vh;
 }
